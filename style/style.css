@@ -48,16 +48,21 @@ code {
     font-family: monospace;
     line-height: 3;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: #dbfbff;
+    border-radius: 5px;
+
 }
-li {
+ul li {
     list-style-type: none;
 }
+
 pre {
     white-space: pre-wrap;
-    background-color: aliceblue;
+    background-color: #dbfbff;
     width: 90%;
+    border-radius: 10px;
 }
+
 @media screen and (max-width: 800px) {
     nav {
         position: absolute;
@@ -81,7 +86,11 @@ pre {
             position: relative;
             margin-left: 0;
             width: 70%;
-            margin-top: 250;
+            margin-top: 250px;
         }
     }
 
+section {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
