@@ -63,7 +63,7 @@ pre {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 480px) {
+@media  screen and (max-width: 680px) {
     nav {
         position: absolute;
         top: 0;
@@ -85,8 +85,8 @@ pre {
         #main-doc {
             position: relative;
             margin-left: 0;
-            width: 100%;
-            margin-top: 270px;
+            width: 70%;
+            margin-top: 250px;
         }
     }
 
