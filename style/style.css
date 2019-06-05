@@ -1,0 +1,80 @@
+body {
+    font-family: Oxygen, sans-serif;
+}
+nav {
+    float: left;
+    position: fixed;
+    top: 30;
+    width: 250px;
+}
+#navbar header {
+    padding-left: 40px;
+}
+#navbar li {
+    line-height: 3;
+    text-transform: uppercase;
+    list-style: none;
+    }
+
+#navbar li a {
+    text-decoration: none;
+    color: #1C140D;
+}
+
+#navbar a {
+    display: block;
+}
+#navbar a:hover {
+    background-color: #CBE86B;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 270px;
+    padding-top: 20px;
+    padding-left: 30px;
+    line-height: 3;
+}
+
+#main-doc header {
+    font-size: 30px;
+    line-height: 3;
+    font-weight: 800;
+    
+}
+
+code {
+    font-size: 14px;
+    font-family: monospace;
+    line-height: 3;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    #navbar a {
+        display: block;
+        line-height: 1.5;
+    }
+    
+    #navbar ul li{
+        display: inline;
+    }
+    #navbar ul {
+        list-style-type: none;
+    }
+        #main-doc {
+            position: relative;
+            margin-left: 0;
+            width: 70%;
+            margin-top: 250;
+        }
+    }
+
