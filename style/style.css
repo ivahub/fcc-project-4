@@ -1,40 +1,31 @@
 body {
     font-family: Oxygen, sans-serif;
 }
+
 nav {
-    float: left;
-    position: fixed;
-    top: 30;
-    width: 250px;
-}
-#navbar header {
-    padding-left: 40px;
-}
-#navbar li {
-    line-height: 3;
-    text-transform: uppercase;
-    list-style: none;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    margin-right: 20px;
     }
-
-#navbar li a {
-    text-decoration: none;
-    color: #1C140D;
-}
-
+    
 #navbar a {
     display: block;
-}
-#navbar a:hover {
-    background-color: #CBE86B;
-}
-
+    line-height: 1.5;
+    }
+    
+#navbar ul li{
+    display: inline;
+    }
+#navbar ul {
+    list-style-type: none;
+    }
 #main-doc {
-    position: absolute;
-    margin-left: 270px;
-    padding-top: 20px;
-    padding-left: 30px;
-    line-height: 3;
-}
+    position: relative;
+    margin-left: 0;
+    width: 70%;
+    margin-top: 250px;
+    }
 
 #main-doc header {
     font-size: 30px;
@@ -52,9 +43,24 @@ code {
     border-radius: 5px;
 
 }
+
 ul li {
     list-style-type: none;
 }
+#navbar a {
+    display: block;
+}
+#navbar a:hover {
+    background-color: #CBE86B;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #1C140D;
+    
+}
+#navbar li {
+
+    }
 
 pre {
     white-space: pre-wrap;
@@ -63,31 +69,42 @@ pre {
     border-radius: 10px;
 }
 
-@media  screen and (max-width: 480px) {
+@media  screen and (min-width: 768px) {
     nav {
-        position: absolute;
-        top: 0;
-        width: 80%;
-        margin-right: 20px;
-    }
+    float: left;
+    position: fixed;
+    top: 30;
+    width: 250px;
+}
+#navbar header {
+    padding-left: 40px;
+}
+
+
+#navbar li a {
+    text-decoration: none;
+    color: #1C140D;
+    line-height: 3;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#navbar a {
+    display: block;
+}
     
-    #navbar a {
-        display: block;
-        line-height: 1.5;
-    }
-    
-    #navbar ul li{
-        display: inline;
-    }
-    #navbar ul {
-        list-style-type: none;
-    }
-        #main-doc {
-            position: relative;
-            margin-left: 0;
-            width: 70%;
-            margin-top: 250px;
-        }
+#navbar a:hover {
+    background-color: #CBE86B;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 30px;
+    line-height: 3;
+}
     }
 
 section {
