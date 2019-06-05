@@ -23,6 +23,7 @@
         </nav>
         
         <main id="main-doc">
+            <h1>Welcome to Python for Buffy fans</h1>
             <section class="main-section" id="Introduction">
                 <header>Introduction</header>
                 <p>Python is a widely used, high level programming language created by Guido van Rossum in 1991.</p>
@@ -62,62 +63,53 @@
                 <header>Lists</header>
                 <p>Lists allow us to store sets of information in one place. They contain items in a particular order.</p>
                 <p>We define lists by giving them a plural name, and wrapping the values inside square brackets <code>[]</code>.</p>
-                <code>villains = ['master', 'spike', 'angelus', 'adam', 'glory', 'dark willow']</code>
+                <pre><code>villains = ['master', 'spike', 'angelus', 'mayor']</code></pre>
                 <p>To access elements inside a list, we can tell Python the index position of said item. Note that the first item in a list will always have the index of <code>0</code>, so if we want to access the third element, we'll have to offset it by one.</p>
                 <code>print(villains[3])</code>
                 <p>outputs:</p>
-                <code>Adam</code>
+                <code>Mayor</code>
                 <p>Lists can be modified by adding items, inserting them, and removing them. </p>
             </section>
             <section class="main-section" id="Tuples">
                 <header>Tuples</header>
                 <p>Tuples are immutable lists, which means that their content cannot be modified. They visually differ from lists as well, because their values are defined within regular brackets <code>()</code>, instead of square brackets we use for lists.</p>
-                <ul>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <pre><code>
-    heroes = ('buffy', 'xander', 'willow', 'giles',
-              'oz', 'tara', 'dawn')
-              </code></pre>
+                <p>Tuples are:</p>
+                <ol>
+                  <li>ordered</li>
+                  <li>unchangeable</li>
+                </ol>
+                <pre><code>heroes = ('buffy', 'xander', 'willow', 'giles', 'oz')</code></pre>
             </section>
             <section class="main-section" id="For_Loops">
                 <header>For Loops</header>
                 <p>A loop simply enables us to repeat an action (or actions) for the entire list, without having to go through each value separately.</p>
                 <p>A simple for-loop looks like this:</p>
-                <pre><code>
-    heroes = ['buffy', 'xander', 'willow', 'giles',
-              'oz', 'tara', 'dawn']
-              
-    for hero in heroes:
-        print('I love ' + hero)
-        </code></pre>
+                <pre><code>heroes = ['buffy', 'xander', 'willow', 'giles', 'oz']
+
+for hero in heroes:
+    print('I love ' + hero)</code></pre>
             </section>
             <section class="main-section" id="If_Statements">
                 <header>If Statements</header>
                 <p>Python supports the usual logical conditions from mathematics, and responds adequately to results <code>True</code> and <code>False</code>.</p>
-                
-                <p>If statements involve tests (or conditions) that are either <code>True</code> or <code>False</code>. Depending on the input, if statements allow us to examine the current state of a program, and respond to it appropriately. </p>
+                <p>Boolean values are constant objects that are either</p>
                  <ul>
-                  <li></li>
-                  <li></li>
+                  <li>True</li>
+                  <li>or</li>
+                  <li>False</li>
                 </ul>
-                <p>Lorem Ipsum</p>
-                <pre><code>
-    if hero == 'willow': 
-        print(hero + ' turns evil at one point')
-        </code></pre>
+                <p>If statements can be tested for truth values, and give the result of either <code>True</code> or <code>False</code>. Depending on the result, if statements allow us to examine the current state of a program, and respond to it appropriately. </p>
+
+                <pre><code>if hero in heroes == 'willow': 
+    print(hero + ' turns evil at one point')</code></pre>
             </section>
             <section class="main-section" id="If-else_Chains">
                 <header>If-else Chains</header>
                 <p>We use the if-else chain for taking an action when a conditional test doesn't pass. In just an if-statement, the code would be ignored, and we would have no input.</p>
-                <p>Lorem Ipsum</p>
-                <pre><code>
-    if hero == 'willow':
-        print('You just turned evil ' + hero)
-    else:
-        print('You are still cool, ' + hero)
-        
+                <pre><code>if hero in heroes == 'willow':
+    print('You just turned evil, ' + hero)
+else:
+    print('You are still cool, ' + hero)  
 </code></pre>
             </section>
             <section class="main-section" id="If-elif-else_Chains">
@@ -129,14 +121,12 @@
                   <li>Python creates one block of code</li>
                   <li>tests are ran in order until one has passed</li>
                 </ol>
-                <pre><code>
-    if hero == 'willow':
-        print('You just turned bad ' + hero.title())
-    elif hero == 'xander':
-        print('You just turned rad, ' + hero.title())
-    else:
-        print('You guys rock ' + hero.title())
-    </code></pre>
+                <pre><code>if hero in heroes == 'willow':
+    print('You just turned bad ' + hero.title())
+elif hero in heroes == 'xander':
+    print('You just turned rad, ' + hero.title())
+else:
+    print('You guys rock ' + hero.title())</code></pre>
             </section>
         </main>
     </body>

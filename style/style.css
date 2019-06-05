@@ -12,14 +12,17 @@ nav {
 #navbar a {
     display: block;
     line-height: 1.5;
+    text-transform: uppercase;
     }
     
 #navbar ul li{
     display: inline;
     }
+
 #navbar ul {
     list-style-type: none;
     }
+
 #main-doc {
     position: relative;
     margin-left: 0;
@@ -34,80 +37,88 @@ nav {
     
 }
 
+h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
 code {
     font-size: 14px;
     font-family: monospace;
     line-height: 3;
-    padding: 10px;
     background-color: #dbfbff;
     border-radius: 5px;
-
+    padding: 10px;
 }
 
 ul li {
     list-style-type: none;
 }
+
 #navbar a {
     display: block;
 }
+
 #navbar a:hover {
     background-color: #CBE86B;
 }
+
 #navbar li a {
     text-decoration: none;
     color: #1C140D;
-    
 }
-#navbar li {
-
-    }
 
 pre {
     white-space: pre-wrap;
     background-color: #dbfbff;
     width: 90%;
     border-radius: 10px;
+    padding-left: 10px;
+}
+
+pre code {
+    padding: 0px; !important;
 }
 
 /* why won't you work */
 @media  screen and (min-width: 560px) {
     nav {
-    float: left;
-    position: fixed;
-    top: 30;
-    width: 250px;
-}
-#navbar header {
-    padding-left: 40px;
-}
-
-
-#navbar li a {
-    text-decoration: none;
-    color: #1C140D;
-    line-height: 3;
-    text-transform: uppercase;
-    list-style: none;
-}
-
-#navbar a {
-    display: block;
-}
-    
-#navbar a:hover {
-    background-color: #CBE86B;
-}
-
-#main-doc {
-    position: absolute;
-    margin-left: 270px;
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-left: 30px;
-    line-height: 3;
-    max-width: 60%;
-}
+        float: left;
+        position: fixed;
+        top: 30;
+        width: 250px;
     }
+    
+    #navbar header {
+        padding-left: 40px;
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        color: #1C140D;
+        line-height: 3;
+        text-transform: uppercase;
+        list-style: none;
+    }
+
+    #navbar a {
+        display: block;
+    }
+    
+    #navbar a:hover {
+        background-color: #CBE86B;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 270px;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-left: 30px;
+        line-height: 3;
+        max-width: 60%;
+    }
+}
 
 section {
     padding-bottom: 30px;
